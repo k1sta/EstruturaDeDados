@@ -54,7 +54,7 @@ int main (void) {
 
 
 	//input
-	printf("%s", "insert the equation: \n");
+	//printf("%s", "insert the equation: \n");
 	fgets(buffer, 100, stdin); //using fgets cause i dont wanna a bof fail right now
 
 	for(int i = 0; i < 100 || buffer[i] == '\n' || buffer[i] == '\0'; i++){
@@ -89,7 +89,9 @@ int main (void) {
 
 	}
 
-	printf("Answer: %f\n", popNumStck(numStckPtr));
+	int temp = (int) popNumStck(numStckPtr);
+
+	printf("%d", temp);
 
 
 	free(buffer);
